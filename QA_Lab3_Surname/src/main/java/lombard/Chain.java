@@ -22,7 +22,7 @@ public class Chain extends Jewelry {
         this.lengthCm = lengthCm;
     }
 
-    /** @return длина цепочки в сантиметрах */
+    /// @return **длина** _цепочки_ в сантиметрах
     public double getLengthCm() { return lengthCm; }
 
     /** @param lengthCm новая длина цепочки */

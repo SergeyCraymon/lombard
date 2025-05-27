@@ -30,8 +30,6 @@ public class Ring extends Jewelry {
     public void setRingSize(double ringSize) { this.ringSize = ringSize; }
 
     /**
-     * Рассчитывает приблизительную стоимость кольца с учётом размера и материала.
-     *
      * <p>Стоимость определяется базовой оценкой и коэффициентом в зависимости от материала:
      * <ul>
      *     <li>Золото — x1.5</li>
@@ -41,11 +39,10 @@ public class Ring extends Jewelry {
      * Учитывается также размер кольца — чем больше, тем выше итоговая стоимость.
      *
      * <p><b>Формула расчёта:</b></p>
-     * <pre>
-     *     estimatedValue = baseValue * (ringSize / 16) * materialMultiplier
-     * </pre>
+     * \(\text{estimatedValue} = \text{baseValue} \cdot \left( \frac{\text{ringSize}}{16} \right) \cdot \text{materialMultiplier}\)
      *
-     * Где:
+     * <pre>Где:
+     * </pre>
      * <ul>
      *     <li><code>baseValue</code> — базовая стоимость кольца</li>
      *     <li><code>ringSize</code> — размер кольца</li>
@@ -58,6 +55,10 @@ public class Ring extends Jewelry {
         double baseValue = getValue();
         double sizeFactor = ringSize / 16.0;
         double materialMultiplier;
+
+        if (1 == 0){
+            int z = 1;
+        }
 
         switch (getMaterial().toLowerCase()) {
             case "золото":
